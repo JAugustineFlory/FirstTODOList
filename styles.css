@@ -27,8 +27,8 @@ body {
 }
 
 .todoApp {
-    width: 100%;
     min-width: 400px;
+    width: 100%;
     padding: 2rem;
     display: flex;
     justify-content: center;
@@ -76,5 +76,24 @@ h1 {
     padding: 8px;
     border-radius: 50%;
     color: white;
+    background-color: rgba(194, 209, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 35px;
+}
 
+.inputArea button:hover {
+    transform: scale(1.1);
+    background-color: rgba(68, 109, 231, 0.5);
+}
+
+.todoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#taskList {
+    width: 100%;
 }
