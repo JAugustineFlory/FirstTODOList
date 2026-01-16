@@ -97,3 +97,56 @@ h1 {
 #taskList {
     width: 100%;
 }
+
+.taskItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    margin-bottom: 8pxx;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.taskItem:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.taskItem.completed span {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.taskCheckbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: rgba(194, 209, 255, 0.8);
+}
+
+.taskItem span {
+    flex: 1;
+    word-break: break-word;
+}
+
+.deleteBtn {
+    background: rgba(255, 100, 100, 0.3);
+    border: 2px solid rgba(255, 100, 100, 0.5);
+    color: white;
+    font-size: 1.5rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.deleteBtn:hover {
+    background: rgba(255, 100, 100, 0.5);
+    transform: scale(1.1);
+}
